@@ -9,7 +9,7 @@ import numpy as np
 import matplotlib.pyplot as mplot
 
 #reads file, splits by line
-file=open("CarminePanther_ch1.csv", "r")
+file=open("FreqInfo.csv", "r")
 data=file.read()
 data=data.replace(" ", "")
 data=data.split("\n")
@@ -20,7 +20,7 @@ yaxis=[]
 amplitude=[]
 
 """
-goes through the Carminepanther file, turns the strings into
+reads FreqInfo file, turns the strings into
 number values, and filters out the unnessecary frequencies
 """
 for i in range(0,len(data)-1):
@@ -36,7 +36,7 @@ for i in range(0,len(data)-1):
 
 for i in range(0, len(xaxis)): 
     if i==0 or xaxis[i] != xaxis[i-1]:          #for loop finds start time
-        k = i                           #used k so i wouldn't change
+        k = i                                   #used k so i wouldn't change
         index=0
         ampsum=0
         mean=0
