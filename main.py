@@ -1,10 +1,5 @@
 # -*- coding: utf-8 -*-
-"""
-CarminePanther
-9-17-18
-Challenge 1
 
-"""
 import numpy as np
 import matplotlib.pyplot as mplot
 
